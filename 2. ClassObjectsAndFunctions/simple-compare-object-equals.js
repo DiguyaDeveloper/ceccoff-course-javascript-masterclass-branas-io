@@ -14,14 +14,14 @@ let equal = true;
 
 for (const key in book1) {
     if (book1[key] !== book2[key]) {
-        equal = false
+        equal = false;
     }
 }
 
 for (const key in book2) {
     if (book1[key] !== book2[key]) {
-        equal = false
+        equal = false;
     }
 }
 
-console.log("Objetos iguais? ", equal)
+console.log("Objetos iguais? ", equal);
