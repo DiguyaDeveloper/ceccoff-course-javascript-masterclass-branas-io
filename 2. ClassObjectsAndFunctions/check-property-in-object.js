@@ -6,6 +6,9 @@ const book = {
     available: true
 };
 
+/**
+ * Exibe 'true' para properiedades existentes e 'false' para propriedades não existentes
+ */
 console.log('title' in book)
 console.log('author' in book)
 console.log('pages' in book)

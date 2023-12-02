@@ -9,6 +9,9 @@ const book = {
 // Expect console 'true'
 console.log('author' in book);
 
+/**
+ * Remove a propriedade author do objeto com operador delete
+ */
 delete book.author;
 
 // Expect console 'false'
