@@ -25,3 +25,8 @@ for (const key in book2) {
 }
 
 console.log("Objetos iguais? ", equal);
+
+/**
+ * Converter o objeto para string e comparar com outra string não é um "Workaround"
+ */
+console.log(JSON.stringify(book1) === JSON.stringify(book2));
