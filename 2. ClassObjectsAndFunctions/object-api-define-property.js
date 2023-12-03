@@ -34,3 +34,17 @@ Object.defineProperty(javascript, "name", {
 
 // Expect console { name: 'JavaScript' }
 console.log(javascript);
+
+/**
+ * Writable permite alteração da variável
+ */
+Object.defineProperty(javascript, "name", {
+    value: "JavaScript",
+    enumerable: true,
+    writable: true
+});
+
+javascript.name = "ECMAScript";
+
+// Expect console { name: 'ECMAScript' }
+console.log(javascript);
