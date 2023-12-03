@@ -48,3 +48,18 @@ javascript.name = "ECMAScript";
 
 // Expect console { name: 'ECMAScript' }
 console.log(javascript);
+
+/**
+ * Configurable permite deletar a propriedade
+ */
+Object.defineProperty(javascript, "name", {
+    value: "JavaScript",
+    enumerable: true,
+    writable: true,
+    configurable: true
+});
+
+delete javascript.name;
+
+// Expect console {}
+console.log(javascript);
